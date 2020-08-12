@@ -1,0 +1,17 @@
+<Context>
+
+    <!-- Only set property to override the default -->
+    <Resource name="jedis/JedisPoolFactory" auth="Container"
+              type="redis.clients.jedis.JedisPool"
+              factory="com.kanibl.sample.JedisPoolFactory"
+              singleton="true"
+              url="redis://localhost:6379"
+              minIdle="1"
+              maxIdle="5"
+              maxTotal="11"
+              maxWaitMillis="1000"
+
+    />
+
+</Context>
+
